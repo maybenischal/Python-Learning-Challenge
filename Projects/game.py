@@ -46,6 +46,9 @@ while max(player_scores) < max_score:
 
         player_scores[player_id] += current_score
         print("Your total score is ", player_scores[player_id])
+        
+        if player_scores[player_id] >= max_score:
+            break
 
 max_score = max(player_scores)
 winning_id = player_scores.index(max_score)
